@@ -2412,3 +2412,27 @@ textarea.form-control {
     stroke-dashoffset: -136px;
   }
 }
+
+/* Navbar brand image sizing and dark-mode white logo */
+.navbar-brand img {
+  max-height: 48px;
+  height: 48px;
+  width: auto;
+  display: block;
+}
+
+/* When navbar background is dark, render logo as white using filter */
+.ftco_navbar.bg-dark .navbar-brand img,
+.navbar-dark .navbar-brand img {
+  filter: brightness(0) invert(1);
+}
+
+/* When navbar is scrolled/white, remove filter */
+.ftco_navbar.scrolled .navbar-brand img,
+.navbar-light .navbar-brand img {
+  filter: none;
+}
+
+@media (max-width: 767.98px) {
+  .navbar-brand img { height: 40px; max-height: 40px; }
+}

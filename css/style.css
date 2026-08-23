@@ -8164,6 +8164,18 @@ h1, h2, h3, h4, h5,
   letter-spacing: 1px;
   line-height: 1;
 }
+.navbar-brand img {
+  max-height: 80px;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+.navbar-brand .navbar-logo {
+  max-height: 80px;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
 .navbar-brand small {
   font-size: 10px;
   letter-spacing: 6px;
@@ -10191,3 +10203,25 @@ textarea.form-control {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+/* Novus Foundation: navbar logo immediate styles */
+.navbar-brand img.navbar-logo {
+  height: 48px !important;
+  max-height: 48px !important;
+  width: auto !important;
+  display: block !important;
+}
+@media (max-width: 767.98px) {
+  .navbar-brand img.navbar-logo { height: 40px !important; max-height: 40px !important; }
+}
+/* White logo on dark navbar */
+.ftco_navbar.bg-dark .navbar-brand img.navbar-logo,
+.navbar-dark .navbar-brand img.navbar-logo {
+  filter: brightness(0) invert(1) !important;
+}
+/* Remove filter when navbar is scrolled (white) */
+.ftco_navbar.scrolled .navbar-brand img.navbar-logo,
+.navbar-light .navbar-brand img.navbar-logo {
+  filter: none !important;
+}
