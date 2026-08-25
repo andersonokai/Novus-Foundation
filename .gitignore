@@ -1,0 +1,41 @@
+# ==========================================
+# 🤖 AI Assistant / Background Runtime Cache
+# ==========================================
+.refact/
+
+# ==========================================
+# 🛠️ Preprocessors & Local Build Tools (Prepros)
+# ==========================================
+prepros-6.config
+*.prepros
+.prepros-config/
+
+# ==========================================
+# 💻 Operating System Clutter
+# ==========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+
+# ==========================================
+# ✍️ Code Editors & IDEs (Optional but Recommended)
+# ==========================================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ==========================================
+# 📦 Node Dependencies / Production Build Logs (If used later)
+# ==========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
