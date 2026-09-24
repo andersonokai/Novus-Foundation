@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Contact | Novus Foundation</title>    
-    <link rel="icon" type="image/png" href="images/fundation Logo.png">
+    <title>Contact | Novus Foundation</title>
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
    
 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -73,33 +77,35 @@
           </div>
           <div class="w-100"></div>
           <div class="col-md-3">
-            <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+            <p><span>Address:</span> 9MCJ+HFH, Odumase, Bono Region, Ghana</p>
           </div>
           <div class="col-md-3">
-            <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+            <p><span>Phone:</span> <a href="tel:+233000000000">+233 (0) 34 709 4238</a></p>
           </div>
           <div class="col-md-3">
-            <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+            <p><span>Email:</span> <a href="mailto:info@novusfdn.org">info@novusfdn.org</a></p>
           </div>
           <div class="col-md-3">
-            <p><span>Website</span> <a href="#">yoursite.com</a></p>
+            <p><span>Website:</span> <a href="https://novusfdn.org" target="_blank" rel="noopener noreferrer">novusfdn.org</a></p>
           </div>
         </div>
         <div class="row block-9">
           <div class="col-md-6 pr-md-5">
           	<h4 class="mb-4">Do you have any questions?</h4>
-            <form action="#">
+            <form action="https://formsubmit.co/ajax/info@novusfdn.org" method="POST" data-success="Thank you. Your message has been sent." onsubmit="return submitMailForm(event, this);">
+               <input type="hidden" name="_subject" value="General inquiry">
+               <input type="hidden" name="_captcha" value="false">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name">
+                <input type="text" name="Name" class="form-control" placeholder="Your Name" required>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Email">
+                <input type="email" name="Email" class="form-control" placeholder="Your Email" required>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject">
+                <input type="text" name="Subject" class="form-control" placeholder="Subject" required>
               </div>
               <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                <textarea name="Message" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
               </div>
               <div class="form-group">
                 <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
@@ -108,7 +114,18 @@
           
           </div>
 
-          <div class="col-md-6" id="map"></div>
+          <div class="col-md-6">
+            <iframe
+             title="Novus Foundation location map"
+             src="https://www.google.com/maps?q=9MCJ%2BHFH%20Odumase&output=embed"
+             width="100%"
+             height="470"
+             style="border:0; border-radius:12px;"
+             allowfullscreen=""
+             loading="lazy"
+             referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
         </div>
       </div>
     </section>
@@ -122,38 +139,18 @@
               <h2 class="ftco-heading-2">About Us</h2>
               <p>Novus Foundation is dedicated to bridging the gap between potential and opportunity through youth digital literacy, tech entrepreneurship, and community empowerment.</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="https://instagram.com/novusfdn" target="_blank" rel="noopener noreferrer" aria-label="Follow Novus Foundation on Instagram" title="Instagram"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="https://instagram.com/novusfdn" target="_blank" rel="noopener noreferrer" aria-label="Follow Novus Foundation on Facebook" title="Facebook"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="https://instagram.com/novusfdn" target="_blank" rel="noopener noreferrer" aria-label="Follow Novus Foundation on Instagram" title="Instagram"><span class="icon-instagram"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.facebook.com/novusfdn" target="_blank" rel="noopener noreferrer" aria-label="Follow Novus Foundation on Facebook" title="Facebook"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.youtube.com/@novusfdn" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to Novus Foundation on YouTube" title="YouTube"><span class="icon-youtube"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.instagram.com/novusfdn" target="_blank" rel="noopener noreferrer" aria-label="Follow Novus Foundation on Instagram" title="Instagram"><span class="icon-instagram"></span></a></li>
                 <li class="ftco-animate"><a href="https://www.linkedin.com/company/novusfdn/" target="_blank" rel="noopener noreferrer" aria-label="Follow Novus Foundation on LinkedIn" title="LinkedIn"><span class="icon-linkedin"></span></a></li>
+                <li class="ftco-animate"><a href="https://x.com/novusfdn" target="_blank" rel="noopener noreferrer" aria-label="Follow Novus Foundation on X" title="X"><span class="icon-x"></span></a></li>
               </ul>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-recent-blog hidden>
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Recent Blog</h2>
-              <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" href="blog-single.html?slug=recent-post" href="blog-single.html?slug=recent-post" style="background-image: url(images/image_1.jpg);"></a>
-                <div class="text">
-                  <h3 class="heading"><a href="blog-single.html">Even the all-powerful Pointing has no control about</a></h3>
-                  <div class="meta">
-                    <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>
-                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" href="blog-single.html?slug=recent-post" href="blog-single.html?slug=recent-post" style="background-image: url(images/image_2.jpg);"></a>
-                <div class="text">
-                  <h3 class="heading"><a href="blog-single.html">Even the all-powerful Pointing has no control about</a></h3>
-                  <div class="meta">
-                    <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>
-                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-                  </div>
-                </div>
-              </div>
+              <div data-blog-posts></div>
             </div>
           </div>
           <div class="col-md-2">
@@ -186,7 +183,7 @@
           <div class="col-md-12 text-center">
 
             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Novus Innovation and Empowerment Foundation LBG (RGN: [Insert_RGN_Here])
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Novus Innovation and Empowerment Foundation LBG (Company Registration No. CG053170826)
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
           </div>
         </div>
@@ -213,13 +210,25 @@
   <script src="js/bootstrap-datepicker.js"></script>
   <script src="js/jquery.timepicker.min.js"></script>
   <script src="js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script>
+    function submitMailForm(event, form) {
+      event.preventDefault();
+      const submitButton = form.querySelector('[type="submit"]');
+      if (submitButton) submitButton.disabled = true;
+      fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
+        .then((response) => {
+          if (!response.ok) throw new Error('Form submission failed');
+          form.reset();
+          alert(form.dataset.success);
+        })
+        .catch(() => alert('We could not send your message. Please email info@novusfdn.org directly.'))
+        .finally(() => { if (submitButton) submitButton.disabled = false; });
+      return false;
+    }
+  </script>
   <script src="js/google-map.js"></script>
+  <script src="js/site-content.js"></script>
   <script src="js/main.js"></script>
     
   </body>
 </html>
-
-
-
-

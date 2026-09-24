@@ -8723,7 +8723,14 @@ h1, h2, h3, h4, h5,
 .staff .text p span {
   font-size: 20px;
   font-weight: 400;
-  color: #7cbd1e;
+}
+
+.icon-x:before {
+  content: "X";
+  font-family: Arial, sans-serif;
+  font-size: 0.85em;
+  font-weight: 700;
+  color: #FFFFFF;
 }
 .staff .text p a {
   text-decoration: underline;
@@ -8734,19 +8741,162 @@ h1, h2, h3, h4, h5,
 }
 
 .partner-logo-card {
+  height: 140px;
+  width: 100%;
   min-height: 140px;
   background: #FFFFFF;
   border: 1px solid rgba(2, 102, 169, 0.12);
   border-radius: 12px;
   padding: 1.25rem;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.partner-logo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(2, 102, 169, 0.12);
 }
 
 .partner-logo-img {
-  max-height: 70px;
+  display: block;
+  max-width: 100%;
+  max-height: 84px;
   width: auto;
-  opacity: 0.75;
-  filter: grayscale(100%);
+  height: auto;
+  object-fit: contain;
+  opacity: 1;
+  filter: none;
+}
+
+.mission-vision-card {
+  position: relative;
+  height: 100%;
+  min-height: 265px;
+  padding: 2.25rem 2rem 1.75rem;
+  background: #fff;
+  border: 1px solid rgba(2, 102, 169, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(20, 48, 78, 0.06);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mission-vision-card::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  content: "";
+  background: #0266A9;
+}
+
+.mission-card::before {
+  background: #0266A9;
+}
+
+.vision-card::before {
+  background: #0266A9;
+}
+
+.mission-vision-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 38px rgba(20, 48, 78, 0.1);
+}
+
+.mission-vision-label {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: #0266A9;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.vision-card .mission-vision-label {
+  color: #0266A9;
+}
+
+.mission-vision-card h3 {
+  color: #14304E;
+  font-size: 1.65rem;
+}
+
+.mission-vision-card p {
+  margin-bottom: 0;
+  color: #081827;
+  line-height: 1.9;
+}
+
+.core-value-card,
+.involvement-card {
+  position: relative;
+  padding: 2rem 1.75rem;
+  background: #FFFFFF;
+  border: 1px solid rgba(2, 102, 169, 0.14);
+  border-radius: 16px;
+  box-shadow: 0 10px 28px rgba(8, 24, 39, 0.06);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.core-value-card::before,
+.involvement-card::before,
+.executive-card::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  content: "";
+  background: #0266A9;
+}
+
+.core-value-card:hover,
+.involvement-card:hover,
+.executive-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 38px rgba(8, 24, 39, 0.11);
+}
+
+.core-value-card h3,
+.involvement-card h3 {
+  color: #081827;
+  font-size: 1.4rem;
+}
+
+.core-value-card p,
+.involvement-card p {
+  color: #081827;
+  line-height: 1.85;
+}
+
+.involvement-card {
+  min-height: 285px;
+}
+
+.involvement-card .btn {
+  margin-top: 1rem;
+}
+
+.executive-card {
+  position: relative;
+  height: 100%;
+  min-height: 210px;
+  border-radius: 16px;
+  box-shadow: 0 10px 28px rgba(8, 24, 39, 0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.executive-card .info h3 {
+  color: #081827;
+}
+
+.executive-card .info span.position,
+.executive-card .text p {
+  color: #0266A9;
 }
 
 .person-1 {
@@ -8759,6 +8909,10 @@ h1, h2, h3, h4, h5,
 
 .person-3 {
   background-image: url("../images/person_3.jpg");
+}
+
+.person-4 {
+  background-image: url("../images/person_4.jpg");
 }
 
 .ftco-social a {
@@ -9268,12 +9422,18 @@ textarea.form-control {
 
 .ftco-footer-social li {
   list-style: none;
-  margin: 0 10px 0 0;
+  margin: 0;
   display: inline-block;
 }
+.ftco-footer-social {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 8px;
+  white-space: nowrap;
+}
 .ftco-footer-social li a {
-  height: 50px;
-  width: 50px;
+  height: 44px;
+  width: 44px;
   display: block;
   float: left;
   background: rgba(255, 255, 255, 0.05);

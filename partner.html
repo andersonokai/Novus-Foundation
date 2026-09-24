@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Partner With Us | Novus Foundation</title>    
-    <link rel="icon" type="image/png" href="images/fundation Logo.png">
+    <title>Partner With Us | Novus Foundation</title>
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
    
 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -105,31 +109,33 @@
       </div>
     </section>
 
-    <section class="ftco-section">
+    <section class="ftco-section" id="partnership-form">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 ftco-animate">
             <h2 class="mb-4 text-center">Institutional Partnership Inquiry</h2>
-            <form action="#" class="p-5 bg-light">
+            <form class="p-5 bg-light" action="https://formsubmit.co/ajax/partnership@novusfdn.org" method="POST" data-success="Thank you. Your partnership inquiry has been sent." onsubmit="return submitMailForm(event, this);">
+               <input type="hidden" name="_subject" value="Institutional partnership inquiry">
+               <input type="hidden" name="_captcha" value="false">
               <div class="form-group">
                 <label for="partner-name">Name *</label>
-                <input type="text" class="form-control" id="partner-name">
+                <input type="text" name="Name" class="form-control" id="partner-name" required>
               </div>
               <div class="form-group">
                 <label for="partner-email">Email *</label>
-                <input type="email" class="form-control" id="partner-email">
+                <input type="email" name="Email" class="form-control" id="partner-email" required>
               </div>
               <div class="form-group">
                 <label for="partner-org">Organization</label>
-                <input type="text" class="form-control" id="partner-org">
+                <input type="text" name="Organization" class="form-control" id="partner-org">
               </div>
               <div class="form-group">
                 <label for="partner-phone">Phone Number</label>
-                <input type="text" class="form-control" id="partner-phone">
+                <input type="text" name="Phone Number" class="form-control" id="partner-phone">
               </div>
               <div class="form-group">
                 <label for="partner-message">Message</label>
-                <textarea id="partner-message" cols="30" rows="5" class="form-control"></textarea>
+                <textarea id="partner-message" name="Message" cols="30" rows="5" class="form-control" required></textarea>
               </div>
               <div class="form-group text-center">
                 <button type="submit" class="btn btn-primary py-3 px-5">Request Partnership Discussion</button>
@@ -148,6 +154,13 @@
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">About Us</h2>
               <p>Novus Foundation is dedicated to bridging the gap between potential and opportunity through youth digital literacy, tech entrepreneurship, and community empowerment.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="https://www.facebook.com/novusfdn" target="_blank" rel="noopener noreferrer" aria-label="Follow Novus Foundation on Facebook" title="Facebook"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.youtube.com/@novusfdn" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to Novus Foundation on YouTube" title="YouTube"><span class="icon-youtube"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.instagram.com/novusfdn" target="_blank" rel="noopener noreferrer" aria-label="Follow Novus Foundation on Instagram" title="Instagram"><span class="icon-instagram"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.linkedin.com/company/novusfdn/" target="_blank" rel="noopener noreferrer" aria-label="Follow Novus Foundation on LinkedIn" title="LinkedIn"><span class="icon-linkedin"></span></a></li>
+                <li class="ftco-animate"><a href="https://x.com/novusfdn" target="_blank" rel="noopener noreferrer" aria-label="Follow Novus Foundation on X" title="X"><span class="icon-x"></span></a></li>
+              </ul>
             </div>
           </div>
           <div class="col-md-3">
@@ -176,7 +189,7 @@
         </div>
         <div class="row">
           <div class="col-md-12 text-center">
-            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Novus Innovation and Empowerment Foundation LBG (RGN: [Insert_RGN_Here])</p>
+            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Novus Innovation and Empowerment Foundation LBG (Company Registration No. CG053170826)</p>
           </div>
         </div>
       </div>
@@ -197,11 +210,23 @@
     <script src="js/bootstrap-datepicker.js"></script>
     <script src="js/jquery.timepicker.min.js"></script>
     <script src="js/scrollax.min.js"></script>
+    <script>
+      function submitMailForm(event, form) {
+        event.preventDefault();
+        const submitButton = form.querySelector('[type="submit"]');
+        if (submitButton) submitButton.disabled = true;
+        fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
+          .then((response) => {
+            if (!response.ok) throw new Error('Form submission failed');
+            form.reset();
+            alert(form.dataset.success);
+          })
+          .catch(() => alert('We could not send your message. Please email partnership@novusfdn.org directly.'))
+          .finally(() => { if (submitButton) submitButton.disabled = false; });
+        return false;
+      }
+    </script>
+    <script src="js/site-content.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
-
-
-
-
-

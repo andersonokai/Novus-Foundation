@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Home | Novus Foundation</title>    
-    <link rel="icon" type="image/png" href="images/fundation Logo.png">
+    <title>Home | Novus Foundation</title>
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
    
 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -97,7 +101,17 @@
 	</div>
 	</section>
 
-    <section class="ftco-section">
+    <section class="ftco-section recent-blog-section" data-recent-blog hidden>
+      <div class="container">
+        <div class="row justify-content-center mb-4 pb-2">
+          <div class="col-md-7 heading-section ftco-animate text-center">
+            <h2 class="mb-3">Recent from our blog</h2>
+          </div>
+        </div>
+        <div class="row" data-blog-posts></div>
+      </div>
+    </section>
+    <section class="ftco-section" hidden>
     	<div class="container">
     		<div class="row">
           <div class="col-md-4 d-flex align-self-stretch ftco-animate">
@@ -137,7 +151,7 @@
     		<div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-5 heading-section ftco-animate text-center">
             <h2 class="mb-4">Our Causes</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <p>Practical programs that help NGOs and young people build digital skills, confidence, and sustainable opportunities.</p>
           </div>
         </div>
     		<div class="row">
@@ -145,10 +159,10 @@
     				<div class="carousel-cause owl-carousel">
        				<div class="item">
        					<div class="cause-entry">
-       						<a href="blog-single.html" class="img" style="background-image: url(images/cause-1.jpg);"></a>
+       						<a href="blog-single.html?slug=ai-for-social-change" class="img" style="background-image: url(images/cause-1.jpg);"></a>
        						<div class="text p-3 p-md-4">
        							<span class="badge badge-warning mb-2">Upcoming</span>
-       							<h3><a href="blog-single.html">AI for Social Change for NGOs</a></h3>
+       							<h3><a href="blog-single.html?slug=ai-for-social-change">AI for Social Change for NGOs</a></h3>
        							<p>Equipping non-governmental organizations with foundational AI literacy and practical tools to optimize operations and scale impact.</p>
        							<span class="donation-time mb-3 d-block">Launching 2026</span>
        						</div>
@@ -156,73 +170,15 @@
        					</div>
        				<div class="item">
        					<div class="cause-entry">
-       						<a href="blog-single.html" class="img" style="background-image: url(images/cause-2.jpg);"></a>
+       						<a href="blog-single.html?slug=digital-launchpad" class="img" style="background-image: url(images/cause-2.jpg);"></a>
        						<div class="text p-3 p-md-4">
        							<span class="badge badge-warning mb-2">Upcoming</span>
-       							<h3><a href="blog-single.html">Digital Launchpad</a></h3>
+       							<h3><a href="blog-single.html?slug=digital-launchpad">Digital Launchpad</a></h3>
        							<p>Skills, mentorship, and resources for youth digital entrepreneurship. Curriculum and cohort planning underway.</p>
        							<span class="donation-time mb-3 d-block">Launching 2026</span>
        						</div>
        						</div>
        					</div>
-                <!--
-	    				<div class="item">
-	    					<div class="cause-entry">
-		    					<a href="#" class="img" style="background-image: url(images/cause-3.jpg);"></a>
-		    					<div class="text p-3 p-md-4">
-		    						<h3><a href="blog-single.html?slug=recent-post">Clean water for the urban area</a></h3>
-		    						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-		    						<span class="donation-time mb-3 d-block">Last donation 1w ago</span>
-		                <div class="progress custom-progress-success">
-		                  <div class="progress-bar bg-primary" role="progressbar" style="width: 28%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
-		                </div>
-		                <span class="fund-raised d-block">$12,000 raised of $30,000</span>
-		    					</div>
-		    				</div>
-	    				</div>
-	    				<div class="item">
-	    					<div class="cause-entry">
-		    					<a href="#" class="img" style="background-image: url(images/cause-4.jpg);"></a>
-		    					<div class="text p-3 p-md-4">
-		    						<h3><a href="blog-single.html?slug=recent-post">Clean water for the urban area</a></h3>
-		    						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-		    						<span class="donation-time mb-3 d-block">Last donation 1w ago</span>
-		                <div class="progress custom-progress-success">
-		                  <div class="progress-bar bg-primary" role="progressbar" style="width: 28%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
-		                </div>
-		                <span class="fund-raised d-block">$12,000 raised of $30,000</span>
-		    					</div>
-		    				</div>
-	    				</div>
-	    				<div class="item">
-	    					<div class="cause-entry">
-		    					<a href="#" class="img" style="background-image: url(images/cause-5.jpg);"></a>
-		    					<div class="text p-3 p-md-4">
-		    						<h3><a href="blog-single.html?slug=recent-post">Clean water for the urban area</a></h3>
-		    						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-		    						<span class="donation-time mb-3 d-block">Last donation 1w ago</span>
-		                <div class="progress custom-progress-success">
-		                  <div class="progress-bar bg-primary" role="progressbar" style="width: 28%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
-		                </div>
-		                <span class="fund-raised d-block">$12,000 raised of $30,000</span>
-		    					</div>
-		    				</div>
-	    				</div>
-	    				<div class="item">
-	    					<div class="cause-entry">
-		    					<a href="#" class="img" style="background-image: url(images/cause-6.jpg);"></a>
-		    					<div class="text p-3 p-md-4">
-		    						<h3><a href="blog-single.html?slug=recent-post">Clean water for the urban area</a></h3>
-		    						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-		    						<span class="donation-time mb-3 d-block">Last donation 1w ago</span>
-		                <div class="progress custom-progress-success">
-		                  <div class="progress-bar bg-primary" role="progressbar" style="width: 28%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
-		                </div>
-		                <span class="fund-raised d-block">$12,000 raised of $30,000</span>
-		    					</div>
-		    				</div>
-	    				</div>
-            -->
     				</div>
     			</div>
     		</div>
@@ -243,8 +199,8 @@
               <div class="text-center mb-3">
                 <div class="img mb-3" style="background-image: url(images/cause-1.jpg); height:120px; border-radius:10px; background-size:cover;"></div>
                 <h3 class="mb-2">TechSoup</h3>
-                <span class="position">Supported our Rural Clinic Project</span>
-                <p class="mt-2">Helped expand access to digital tools and training resources for community-led service delivery.</p>
+                <span class="position">Supports our digital empowerment projects</span>
+                <p class="mt-2">Provides nonprofit technology resources and support that strengthen our digital skills and community programs.</p>
               </div>
             </div>
           </div>
@@ -252,9 +208,9 @@
             <div class="staff p-4" style="width:100%; border:1px solid rgba(2,102,169,0.12); border-radius:12px; background:#fff; box-shadow:0 8px 24px rgba(0,0,0,0.04);">
               <div class="text-center mb-3">
                 <div class="img mb-3" style="background-image: url(images/cause-2.jpg); height:120px; border-radius:10px; background-size:cover;"></div>
-                <h3 class="mb-2">Google</h3>
-                <span class="position">Backed our Digital Skills Outreach</span>
-                <p class="mt-2">Supported workshops and mentorship that introduced young people to practical digital opportunities.</p>
+                <h3 class="mb-2">Google.org</h3>
+                <span class="position">Grant support for our projects</span>
+                <p class="mt-2">Provides grant support that helps us deliver practical digital empowerment programs for communities in the Bono Region.</p>
               </div>
             </div>
           </div>
@@ -273,6 +229,8 @@
           <div class="col text-center">
             <a href="partner.html" class="btn btn-primary py-3 px-5">Explore Partnership Opportunities</a>
           </div>
+        </div>
+      </div>
     </section>
 
     <section class="ftco-gallery">
@@ -322,7 +280,7 @@
 	    </div>
     </section>
 
-    <section class="ftco-section">
+    <section class="ftco-section" hidden>
       <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section ftco-animate text-center">
@@ -333,7 +291,7 @@
         <div class="row d-flex">
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
+              <a href="blog-single.html?slug=digital-launchpad-cohort" class="block-20" style="background-image: url('images/image_1.jpg');">
               </a>
               <div class="text p-4 d-block">
               	<div class="meta mb-3">
@@ -341,14 +299,14 @@
                   <div><a href="#">Admin</a></div>
                   <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
-                <h3 class="heading mt-3"><a href="#">Digital Launchpad launches first cohort</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                <h3 class="heading mt-3"><a href="blog-single.html?slug=digital-launchpad-cohort">Digital Launchpad launches first cohort</a></h3>
+                <p>Read how the first cohort built practical digital skills, confidence, and community-focused solutions.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
+              <a href="blog-single.html?slug=digital-launchpad-cohort" class="block-20" style="background-image: url('images/image_2.jpg');">
               </a>
               <div class="text p-4 d-block">
               	<div class="meta mb-3">
@@ -356,14 +314,14 @@
                   <div><a href="#">Admin</a></div>
                   <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
-                <h3 class="heading mt-3"><a href="#">Digital Launchpad launches first cohort</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                <h3 class="heading mt-3"><a href="blog-single.html?slug=digital-launchpad-cohort">Digital Launchpad launches first cohort</a></h3>
+                <p>Read how the first cohort built practical digital skills, confidence, and community-focused solutions.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
+              <a href="blog-single.html?slug=digital-launchpad-cohort" class="block-20" style="background-image: url('images/image_3.jpg');">
               </a>
               <div class="text p-4 d-block">
               	<div class="meta mb-3">
@@ -371,15 +329,14 @@
                   <div><a href="#">Admin</a></div>
                   <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
-                <h3 class="heading mt-3"><a href="#">Digital Launchpad launches first cohort</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                <h3 class="heading mt-3"><a href="blog-single.html?slug=digital-launchpad-cohort">Digital Launchpad launches first cohort</a></h3>
+                <p>Read how the first cohort built practical digital skills, confidence, and community-focused solutions.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
     <section class="ftco-section bg-light">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
@@ -388,9 +345,26 @@
           </div>
         </div>
         <div class="row">
-        	<div class="col-md-4 d-flex ftco-animate">
+          <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/event-1.jpg');">
+              <a href="blog-single.html?slug=ai-for-social-change" class="block-20" style="background-image: url('images/cause-1.jpg');">
+              </a>
+              <div class="text p-4 d-block">
+              	<div class="meta mb-3">
+                  <div><a href="#">October 30, 2026</a></div>
+                  <div><a href="#">Novus Foundation</a></div>
+                </div>
+                <h3 class="heading mb-4"><a href="blog-single.html?slug=ai-for-social-change">AI &amp; Effective Communication Workshop</a></h3>
+                <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> Friday, 30 October 2026</span> <span><i class="icon-map-o"></i> Penkwase, Sunyani</span></p>
+                <p>A practical workshop helping civil society and community leaders use AI to communicate clearly and scale their impact.</p>
+                <p><a href="blog-single.html?slug=ai-for-social-change">View Full Details <i class="ion-ios-arrow-forward"></i></a></p>
+              </div>
+            </div>
+          </div>
+          <!-- Additional events will be added here as they are confirmed.
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry align-self-stretch">
+              <a href="event-single.html?slug=linkedin-innovation-salon" class="block-20" style="background-image: url('images/event-2.jpg');">
               </a>
               <div class="text p-4 d-block">
               	<div class="meta mb-3">
@@ -398,16 +372,16 @@
                   <div><a href="#">Admin</a></div>
                   <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
-                <h3 class="heading mb-4"><a href="#">World Wide Donation</a></h3>
-                <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> 10:30AM-03:30PM</span> <span><i class="icon-map-o"></i> Venue Main Campus</span></p>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                <p><a href="event-single.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>
+                <h3 class="heading mb-4"><a href="event-single.html?slug=linkedin-innovation-salon">Innovation Salon &amp; Networking Day</a></h3>
+                <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> 02 November 2026</span> <span><i class="icon-map-o"></i> Sunyani</span></p>
+                <p>A networking event for entrepreneurs, trainers, and change-makers building community-driven digital solutions.</p>
+                <p><a href="event-single.html?slug=linkedin-innovation-salon">View Event Details <i class="ion-ios-arrow-forward"></i></a></p>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/event-2.jpg');">
+              <a href="event-single.html?slug=community-mentorship-circle" class="block-20" style="background-image: url('images/event-3.jpg');">
               </a>
               <div class="text p-4 d-block">
               	<div class="meta mb-3">
@@ -415,30 +389,14 @@
                   <div><a href="#">Admin</a></div>
                   <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
-                <h3 class="heading mb-4"><a href="#">World Wide Donation</a></h3>
-                <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> 10:30AM-03:30PM</span> <span><i class="icon-map-o"></i> Venue Main Campus</span></p>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                <p><a href="event-single.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>
+                <h3 class="heading mb-4"><a href="event-single.html?slug=community-mentorship-circle">Community Mentorship Circle</a></h3>
+                <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> 14 December 2026</span> <span><i class="icon-map-o"></i> Odumase</span></p>
+                <p>A support and learning session for digital skills, career growth, and grassroots innovation.</p>
+                <p><a href="event-single.html?slug=community-mentorship-circle">View Event Details <i class="ion-ios-arrow-forward"></i></a></p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/event-3.jpg');">
-              </a>
-              <div class="text p-4 d-block">
-              	<div class="meta mb-3">
-                  <div><a href="#">Sep. 10, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <h3 class="heading mb-4"><a href="#">World Wide Donation</a></h3>
-                <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> 10:30AM-03:30PM</span> <span><i class="icon-map-o"></i> Venue Main Campus</span></p>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                <p><a href="event-single.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>
-              </div>
-            </div>
-          </div>
+          -->
         </div>
       </div>
     </section>
@@ -452,15 +410,17 @@
     		</div>
     		<div class="col-md-6 volunteer pl-md-5 ftco-animate">
     			<h3 class="mb-3">Be a volunteer</h3>
-    			<form action="#" class="volunter-form">
+    			<form class="volunter-form" action="https://formsubmit.co/ajax/volunteer@novusfdn.org" method="POST" data-success="Thank you. Your volunteer inquiry has been sent." onsubmit="return submitMailForm(event, this);">
+             <input type="hidden" name="_subject" value="Volunteer inquiry">
+             <input type="hidden" name="_captcha" value="false">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Your Name">
+              <input type="text" name="Name" class="form-control" placeholder="Your Name" required>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Your Email">
+              <input type="email" name="Email" class="form-control" placeholder="Your Email" required>
             </div>
             <div class="form-group">
-              <textarea name="" id="" cols="30" rows="3" class="form-control" placeholder="Message"></textarea>
+              <textarea name="Message" cols="30" rows="3" class="form-control" placeholder="Message" required></textarea>
             </div>
             <div class="form-group">
               <input type="submit" value="Send Message" class="btn btn-white py-3 px-5">
@@ -480,13 +440,18 @@
         </div>
         <div class="owl-carousel carousel-cause">
           <div class="item">
-            <div class="partner-logo-card d-flex justify-content-center align-items-center" style="min-height: 140px; background: #fff; border: 1px solid rgba(2,102,169,0.12); border-radius: 12px; padding: 1.25rem; box-shadow: 0 8px 24px rgba(0,0,0,0.04); transition: transform .2s ease, box-shadow .2s ease;">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/TechSoup_Logo.svg/3840px-TechSoup_Logo.svg.png" alt="TechSoup partner logo" style="max-height: 70px; width: auto; opacity: 0.75; filter: grayscale(100%);">
+            <div class="partner-logo-card d-flex justify-content-center align-items-center">
+              <img src="images/TechSoup Logo.png" alt="TechSoup partner logo" class="partner-logo-img">
             </div>
           </div>
           <div class="item">
-            <div class="partner-logo-card d-flex justify-content-center align-items-center" style="min-height: 140px; background: #fff; border: 1px solid rgba(2,102,169,0.12); border-radius: 12px; padding: 1.25rem; box-shadow: 0 8px 24px rgba(0,0,0,0.04); transition: transform .2s ease, box-shadow .2s ease;">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1KF_Q1dKIHY8SMefc4of2ISmd3osi5IkHgRFEPjxKXg&s=10" alt="Google partner logo" style="max-height: 70px; width: auto; opacity: 0.75; filter: grayscale(100%);">
+            <div class="partner-logo-card d-flex justify-content-center align-items-center">
+              <img src="images/google.org logo.png" alt="Google.org partner logo" class="partner-logo-img">
+            </div>
+          </div>
+          <div class="item">
+            <div class="partner-logo-card d-flex justify-content-center align-items-center">
+              <img src="images/Cisco_NetworkingAcademy_Logo_Stacked_Dark.png" alt="Cisco Networking Academy partner logo" class="partner-logo-img">
             </div>
           </div>
         </div>
@@ -502,13 +467,15 @@
               <h2 class="ftco-heading-2">About Us</h2>
               <p>Novus Foundation is dedicated to bridging the gap between potential and opportunity through youth digital literacy, tech entrepreneurship, and community empowerment.</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="https://instagram.com/novusfdn" target="_blank" rel="noopener noreferrer" aria-label="Follow Novus Foundation on Instagram" title="Instagram"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="https://instagram.com/novusfdn" target="_blank" rel="noopener noreferrer" aria-label="Follow Novus Foundation on Facebook" title="Facebook"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="https://instagram.com/novusfdn" target="_blank" rel="noopener noreferrer" aria-label="Follow Novus Foundation on Instagram" title="Instagram"><span class="icon-instagram"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.facebook.com/novusfdn" target="_blank" rel="noopener noreferrer" aria-label="Follow Novus Foundation on Facebook" title="Facebook"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.youtube.com/@novusfdn" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to Novus Foundation on YouTube" title="YouTube"><span class="icon-youtube"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.instagram.com/novusfdn" target="_blank" rel="noopener noreferrer" aria-label="Follow Novus Foundation on Instagram" title="Instagram"><span class="icon-instagram"></span></a></li>
                 <li class="ftco-animate"><a href="https://www.linkedin.com/company/novusfdn/" target="_blank" rel="noopener noreferrer" aria-label="Follow Novus Foundation on LinkedIn" title="LinkedIn"><span class="icon-linkedin"></span></a></li>
+                <li class="ftco-animate"><a href="https://x.com/novusfdn" target="_blank" rel="noopener noreferrer" aria-label="Follow Novus Foundation on X" title="X"><span class="icon-x"></span></a></li>
               </ul>
             </div>
           </div>
+          <!-- Recent blog content will be published here when the first post is ready.
           <div class="col-md-4">
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Recent Blog</h2>
@@ -536,6 +503,7 @@
               </div>
             </div>
           </div>
+          -->
           <div class="col-md-2">
              <div class="ftco-footer-widget mb-4 ml-md-4">
               <h2 class="ftco-heading-2">Site Links</h2>
@@ -567,7 +535,7 @@
           <div class="col-md-12 text-center">
 
             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Novus Innovation and Empowerment Foundation LBG (RGN: [Insert_RGN_Here])
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Novus Innovation and Empowerment Foundation LBG (Company Registration No. CG053170826)
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
           </div>
         </div>
@@ -594,13 +562,26 @@
   <script src="js/bootstrap-datepicker.js"></script>
   <script src="js/jquery.timepicker.min.js"></script>
   <script src="js/scrollax.min.js"></script>
+  <script>
+    function submitMailForm(event, form) {
+      event.preventDefault();
+      const submitButton = form.querySelector('[type="submit"]');
+      if (submitButton) submitButton.disabled = true;
+      fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
+        .then((response) => {
+          if (!response.ok) throw new Error('Form submission failed');
+          form.reset();
+          alert(form.dataset.success);
+        })
+        .catch(() => alert('We could not send your message. Please email volunteer@novusfdn.org directly.'))
+        .finally(() => { if (submitButton) submitButton.disabled = false; });
+      return false;
+    }
+  </script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
+  <script src="js/site-content.js"></script>
   <script src="js/main.js"></script>
     
   </body>
 </html>
-
-
-
-
