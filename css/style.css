@@ -8820,7 +8820,7 @@ h1, h2, h3, h4, h5,
 }
 
 .mission-vision-card h3 {
-  color: #14304E;
+  color: #081827;
   font-size: 1.65rem;
 }
 
@@ -9417,7 +9417,7 @@ textarea.form-control {
   margin-right: 5px;
 }
 .ftco-footer .block-21 .text .meta > div a {
-  color: rgb(32.3153942428%, 60.0834376304%, 86.1159783062%);
+  color: #0266A9;
 }
 
 .ftco-footer-social li {
@@ -9436,12 +9436,14 @@ textarea.form-control {
   width: 44px;
   display: block;
   float: left;
+  color: #FFFFFF;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 50%;
   position: relative;
 }
 .ftco-footer-social li a span {
   position: absolute;
+  color: #FFFFFF;
   font-size: 26px;
   top: 50%;
   left: 50%;
